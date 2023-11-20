@@ -1,0 +1,10 @@
+<div class="container" *ngIf="flag" >
+    <input (change)="SelectFile($event)"    type="file" />
+    <button (click)="uploadFile()" class="btn" mat-raised-button color="primary">Upload</button>
+</div>
+
+<div class="container" *ngIf="!flag">
+ <h1> Please wait...</h1>
+ <h2>Uploading...</h2>
+
+</div>
